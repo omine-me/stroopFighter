@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>ストループ効果ゲーム</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+<h1>ストループ効果ゲーム</h1>
+<div id="container">
+	<div id="startContainer">
+		<div><button id="startButton">START</button></div>
+	</div>
+	<div id="gameContainer">
+		<div id="timeBar"></div>
+		<div class="question">文字の<span id="quesChange">よみ</span>を選べ</div>
+		<div id="questionCol"><b id="quesColB">黒</b></div>
+		<div class="choices"><div class="choice" id="choice1">くろ</div><div class="choice" id="choice2">あお</div></div>
+		<div class="corWorImg" id="correct"><img src="./correct.svg" width="70%" height="70%"></div>
+		<div class="corWorImg" id="wrong"><img src="./wrong.svg" width="70%" height="70%"></div>
+	</div>
+	<div id="resultContainer">
+		<div class="resText">結果</div>
+		<div><b id="finalPoint">0</b></div>
+		<div><button id="twiBtn"><a id="twiLink" href="#" target="_blank">結果をツイート</a></button></div>
+		<div><button id="replay">もう一度</button></div>
+	</div>
+</div>
+</body>
+</html>
+
+<!-- twiのurl!!!!! -->

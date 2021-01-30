@@ -1,0 +1,13 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <pattern x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse" viewBox="0 0 100 100" id="pattern-0">
+      <rect x="0" y="0" width="50" height="100" style="fill: black;"></rect>
+    </pattern>
+    <pattern id="pattern-0-0" patternTransform="matrix(1, 0, 0, 1, 641.191498, 380.438507)" xlink:href="#pattern-0"></pattern>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="653.691" y1="142.682" x2="653.691" y2="643.195" id="gradient-0">
+      <stop offset="0" style="stop-color: #bada55"></stop>
+      <stop offset="1" style="stop-color: #758d29"></stop>
+    </linearGradient>
+  </defs>
+  <path d="M 603.641 142.682 H 703.743 V 342.888 H 903.948 V 442.99 H 703.743 V 643.195 H 603.641 V 442.99 H 403.435 V 342.888 H 603.641 Z" style="stroke-width: 10px; stroke-linejoin: round; stroke: rgb(255, 0, 0); fill: rgba(255, 0, 0, 0.6);" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 65.619736, -490.079407)" bx:shape="cross 403.435 142.682 500.513 500.513 100.102 100.102 0.5 1@1d8a5d7c"></path>
+</svg>
