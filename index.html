@@ -2,29 +2,42 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<title>ストループ効果ゲーム</title>
+	<title>ストループファイター</title>
+	<head prefix=”og: http://ogp.me/ns#”>
+	<meta property="og:url" content="https://mineg5071.github.io/stroopFighter" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="ストループファイター" />
+	<meta property="og:description" content="ストループ効果を使ったゲーム！！！" />
+	<meta property="og:image" content="https://github.com/mineg5071/stroopFighter/blob/c3305da9f9ceeb5159eaae440a3a1205da69b216/correct.svg" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@mi_nenemi" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="./main.js"></script>
 </head>
 <body ontouchstart="">
-<h1>ストループ効果ゲーム</h1>
+<h1><a href="./stroopFighter">🔥ストループファイター🔥</a></h1>
 <div id="container">
 	<div id="startContainer">
-		<div><button id="startButton">START</button></div>
+		<div id="stroopDesc"><h2>ストループ効果とは？</h2><p>ストループ効果（ストループこうか、英: Stroop effect）とは、文字意味と文字色のように同時に目にするふたつの情報が干渉しあう現象。</p><p><a style="text-decoration: underline" href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%88%E3%83%AB%E3%83%BC%E3%83%97%E5%8A%B9%E6%9E%9C">Wikipedia</a> より</p>
+		<p id="stroopEx"><span style="color:red;">赤</span> <span style="color:green;">赤</span></p>
+		<p>右の赤は左の赤より読みづらくないですか？</p>
+		<br>
+		<h2>🔥<span style="color:#ff8f00;">ストループファイター</span>🔥とは？</h2><p>ストループ効果を使ったゲームです。２択から正しい方を選んでね、楽しいよ！</p></p>
+		</div>
+		<div><button id="startButton">スタート</button></div>
 	</div>
 	<div id="gameContainer">
 		<div id="timeBar"></div>
 		<div class="question"><span id="quesChange">よみ</span></div>
 		<div id="questionCol"><b id="quesColB">黒</b></div>
-		<div class="choices"><div class="choice" id="choice1">くろ</div><div class="choice" id="choice2">あお</div></div>
+		<div id="choices"><div class="choice" id="choice1">くろ</div><div class="choice" id="choice2">あお</div></div>
 		<div class="corWorImg" id="correct"><img src="./correct.svg" width="70%" height="70%"></div>
 		<div class="corWorImg" id="wrong"><img src="./wrong.svg" width="70%" height="70%"></div>
 	</div>
 	<div id="resultContainer">
-		<div class="resText">結果</div>
+		<div class="resText">結果！</div>
 		<div><b id="finalPoint">0</b></div>
 		<div><button id="twiBtn"><a id="twiLink" href="#" target="_blank">結果をツイート</a></button></div>
 		<div><button id="replay">もう一度</button></div>
@@ -32,5 +45,3 @@
 </div>
 </body>
 </html>
-
-<!-- twiのurl!!!!! -->

@@ -2,7 +2,7 @@ const colJa = ['赤','黄','緑','青','黒']
 
 const colEn = ['red','yellow','green','blue','black']
 
-const colHira = ['あか','\u2002き\u2002','みどり','あお','くろ']
+const colHira = ['\u2002あか\u2002','\u2002\u2002き\u2002\u2002','みどり','\u2002あお\u2002','\u2002くろ\u2002']
 
 const quesText = ['よみ','いろ']
 
@@ -27,19 +27,25 @@ let pointCounter
 
 jQuery(document).ready(function(){
 
-$('#startButton, #replay').on('click', () => {
+$('#replay').on('click', () => {
+	$('#resultContainer').css("display","none");
+	$('#startContainer').css("display","block");
+})
+
+$('#startButton').on('click', () => {
 	currentTime = time
 	finalPoint = 0
 	eachPoint = 10000
 	$('#startContainer').css("display","none");
 	$('#gameContainer').css("display","block");
-	$('#resultContainer').css("display","none");
+	$('#choices').css("display","none");
 	$('#quesColB').text("３");
 	wait(1).done(() => {
         $('#quesColB').text("２");
         wait(1).done(() => {
 	        $('#quesColB').text("１");
 	        wait(1).done(() => {
+	        	$('#choices').css("display","flex");
 	        	timer = setInterval(() => {
 	        		currentTime--;
 				    $("#timeBar").css({
@@ -131,7 +137,7 @@ const showResult = () => {
 	$('#gameContainer').css("display","none");
 	$('#resultContainer').css("display","block");
 	$('#finalPoint').text(finalPoint);
-	$('#twiLink').attr("href", "http://twitter.com/share?url=https://mineg5071.github.io/stroopFighter&text=ストループ・ファイター%20結果：" + finalPoint + "点&hashtags=ストループ効果")
+	$('#twiLink').attr("href", "http://twitter.com/share?url=https://mineg5071.github.io/stroopFighter&text=🔥ストループ・ファイター🔥%20結果：" + finalPoint + "点&hashtags=ストループ効果")
 }
 
 const wait = (sec) => {
