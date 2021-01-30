@@ -131,7 +131,7 @@ const showResult = () => {
 	$('#gameContainer').css("display","none");
 	$('#resultContainer').css("display","block");
 	$('#finalPoint').text(finalPoint);
-	$('#twiLink').attr("href", "http://twitter.com/share?url=google.com&text=ストループ・ファイター%20結果：" + finalPoint + "点&hashtags=ストループ効果")
+	$('#twiLink').attr("href", "http://twitter.com/share?url=https://mineg5071.github.io/stroopFighter&text=ストループ・ファイター%20結果：" + finalPoint + "点&hashtags=ストループ効果")
 }
 
 const wait = (sec) => {
